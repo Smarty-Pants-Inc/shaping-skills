@@ -1,5 +1,5 @@
 ---
-name: shaping
+name: shaping/shaping
 description: Use this methodology when collaboratively shaping a solution with the user - iterating on problem definition (requirements) and solution options (shapes).
 ---
 
@@ -40,6 +40,19 @@ Whenever making a change:
 The system only works if the levels are consistent with each other.
 
 ---
+
+## Persistence (Critical)
+
+Shaping artifacts must live on disk.
+
+Chat context can be compacted or truncated; if you only keep the shaping state in the chat transcript, you'll lose decisions and drift.
+
+At the start of a shaping session:
+
+- Ask the user where the shaping doc should live (and create the directory if needed).
+- Default suggestion: `docs/shaping/<feature>.md` (and optionally `docs/shaping/<feature>-slices.md`).
+- After each major update (new R, new shape, fit check decision, breadboard, slices), write the updated tables back into the doc.
+- Treat the doc as the source of truth; the chat is just the collaboration surface.
 
 ## Starting a Session
 

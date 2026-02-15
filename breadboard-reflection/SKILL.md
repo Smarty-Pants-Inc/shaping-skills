@@ -1,6 +1,11 @@
+---
+name: shaping/breadboard-reflection
+description: Analyze a breadboard and identify/fix design smells.
+---
+
 # Breadboard Analysis
 
-Find design smells in a breadboard and fix them. Works on existing breadboards built with the `/breadboarding` skill.
+Find design smells in a breadboard and fix them. Works on existing breadboards built with the `/shaping/breadboarding` skill.
 
 ---
 

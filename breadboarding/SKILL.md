@@ -1,11 +1,19 @@
 ---
-name: breadboarding
+name: shaping/breadboarding
 description: Transform a workflow description into affordance tables showing UI and Code affordances with their wiring. Use to map existing systems or design new ones from shaped parts.
 ---
 
 # Breadboarding
 
 Breadboarding transforms a workflow description into a complete map of affordances and their relationships. The output is always a set of tables showing numbered UI and Code affordances with their Wires Out and Returns To relationships. The tables are the truth. Mermaid diagrams are optional visualizations for humans.
+
+## Persistence (Critical)
+
+Breadboards are high-signal artifacts and should be written to disk.
+
+- Put breadboards in the shaping doc or slices doc (or a dedicated `breadboard-<topic>.md`).
+- Do not rely on the chat transcript; it can be compacted/truncated.
+- When iterating, update the tables in the file first, then mirror the updated tables back into chat for review.
 
 ---
 
